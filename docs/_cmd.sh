@@ -48,6 +48,7 @@ EOF
 }
 
 for path in ${rootdir}/docs/cmd/*.md; do
+    cd "$(dirname "${path}")"
     echo "Generating $(realpath --relative-to=${rootdir} ${path})..."
     # copy YAML metadata
     awk '/^$/ {exit} {print}' "${path}" > "${path}.new"

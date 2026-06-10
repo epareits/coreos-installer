@@ -1,0 +1,3 @@
+# CI replay marker for lint/shellcheck
+feature_branch: replay-6bbf3d64
+workflow: .github/workflows/shellcheck.yml
